@@ -1,18 +1,13 @@
-const SpeedRate = function() {
-    let speedRate = 1;
+let speedRate = 1;
 
-    function set(value) {
+const SpeedRate = {
+    set(value) {
         speedRate = value;
-    }
+    },
 
-    function get() {
+    get() {
         return speedRate;
     }
-
-    return {
-        set,
-        get
-    };
-}();
+};
 
 export default SpeedRate;
